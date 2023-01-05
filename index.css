@@ -1,0 +1,429 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #151b34;
+    font-family: Wagon;
+    color: #fff1ca;
+    overscroll-behavior: none;
+}
+
+.container-outer {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 2800px;
+    height: 100%;
+}
+
+.background-circle {
+    animation: fadeInBackground ease-in-out 2.5s;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.grain {
+    animation: fadeInBackground ease-in-out 2.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+}
+
+.foreground {
+    animation: fadeInForeground ease-in-out 3s;
+    position: absolute;
+    height: 70%;
+    width: 30%;
+    top: 10%;
+    left: 35%;
+}
+
+.container-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.door {
+    height: 100%;
+    z-index: -1;
+}
+
+.button {
+    position: absolute;
+    left: 13%;
+    top: 100%;
+    border: none;
+    background-color: #1c1b2f;
+    padding: 15px 24px;
+    margin: 28px;
+    text-align: center;
+    font-family: Wagon;
+    font-weight: 500;
+    color: #fff1ca;
+    opacity: 70%;
+    letter-spacing: 1px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.button:hover {
+    background-color: #fff1ca;
+    color: #1c1b2f;
+    opacity: 100%;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 120px;
+    font-weight: 500;
+    line-height: 0%;
+}
+
+h3 {
+    text-transform: normal;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.sun {
+    animation: fadeInSun ease-in-out 2s;
+    position: absolute;
+    left: -45%;
+    top: -15%;
+    text-align: right;
+}
+
+.room {
+    animation: fadeInRoom ease-in-out 2s;
+    position: absolute;
+    bottom: -15%;
+    left: 75%;
+    text-align: left;
+}
+
+@keyframes fadeInForeground {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes fadeInSun {
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRoom {
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInExploreBG {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vh;
+    height: 100vw;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100vh);
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.wrapper {
+    width: 600vw;
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-100vh);
+}
+
+.text-wrapper {
+    animation: fadeInForeground ease-in-out 2s;
+    width: 400px;
+    position: absolute;
+    top: 5%;
+    left: 150px;
+    z-index: 1;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.aug-23-1 {
+    animation: fadeInForeground ease-in-out 1s;
+    width: 450px;
+    position: absolute;
+    top: 35%;
+    left: 200px;
+}
+
+.aug-23-2 {
+    animation: fadeInForeground ease-in-out 2s;
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    left: 850px;
+}
+
+.aug-23-3 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    left: 1400px;
+}
+
+.aug-23-4 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 500px;
+    position: absolute;
+    top: 15%;
+    left: 2000px;
+}
+
+.aug-24 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    left: 2600px;
+}
+
+.aug-24-2 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 350px;
+    position: absolute;
+    top: 8%;
+    left: 3450px;
+}
+
+.aug-26 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 500px;
+    position: absolute;
+    top: 23%;
+    left: 3950px;
+}
+
+.aug-30 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 400px;
+    position: absolute;
+    top: 12%;
+    left: 4500px;
+}
+
+.sep-29 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 450px;
+    position: absolute;
+    top: 23%;
+    left: 5050px;
+}
+
+.sep-29-2 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 300px;
+    position: absolute;
+    top: 10%;
+    left: 5600px;
+}
+
+.oct-19 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 350px;
+    position: absolute;
+    top: 15%;
+    left: 6000px;
+}
+
+.oct-21 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 450px;
+    position: absolute;
+    top: 23%;
+    left: 6450px;
+}
+
+.dec-17 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 350px;
+    position: absolute;
+    top: 18%;
+    left: 7000px;
+}
+
+.dec-23 {
+    animation: fadeInForeground ease-in-out 3s;
+    width: 650px;
+    position: absolute;
+    top: 20%;
+    left: 7500px;
+}
+
+.end-wrapper {
+    animation: fadeInForeground ease-in-out 2s;
+    width: 400px;
+    position: absolute;
+    top: 7%;
+    left: 7800px;
+    z-index: 1;
+}
+
+.room-image {
+    width: 100%;
+}
+
+.scene1-bg {
+    animation: fadeInExploreBG ease-in-out 1s;
+    height: 100%;
+    width: 1100px;
+    opacity: 80%;
+    z-index: -1;
+}
+
+.scene2-bg {
+    animation: fadeInExploreBG ease-in-out 1s;
+    position: absolute;
+    top: -5%;
+    left: 1500px;
+    height: 100%;
+    width: 1000px;
+    opacity: 80%;
+    z-index: -1;
+}
+
+.scene3-bg {
+    animation: fadeInExploreBG ease-in-out 1s;
+    position: absolute;
+    top: 0%;
+    left: 2500px;
+    height: 90%;
+    opacity: 80%;
+    z-index: -1;
+}
+
+/* .scene4-bg {
+    animation: fadeInExploreBG ease-in-out 1s;
+    position: absolute;
+    top: -3%;
+    left: 3850px;
+    height: 70%;
+    opacity: 80%;
+    z-index: -1;
+} */
+
+.scene5-bg {
+    animation: fadeInExploreBG ease-in-out 1s;
+    position: absolute;
+    top: 0%;
+    left: 4250px;
+    height: 100%;
+    opacity: 80%;
+    z-index: -1;
+}
+
+.scene6-bg {
+    animation: fadeInExploreBG ease-in-out 1s;
+    position: absolute;
+    top: 0%;
+    left: 5250px;
+    height: 90%;
+    opacity: 80%;
+    z-index: -1;
+}
+
+.scene7-bg {
+    animation: fadeInExploreBG ease-in-out 1s;
+    position: absolute;
+    top: 0%;
+    left: 6600px;
+    height: 90%;
+    opacity: 80%;
+    z-index: -1;
+}
+
+.slower {
+    transform: translateZ(-.3px) scale(1.3) translateX(0%) translateY(2vh);
+}
+
+/* .reveal {
+    transform: translateX(50px);
+    opacity: 0.5;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+} */
+
+.circle {
+    animation: fadeInForeground ease-in-out 2s;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 65%;
+    left: 150px;
+    z-index: -1;
+}
